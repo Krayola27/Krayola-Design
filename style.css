@@ -135,7 +135,6 @@ body {
 
 .footer {
     background-color: var(--kbg);
-    border-bottom: 1px solid #e4ebf3;
     padding: 50px 30px 15px;
     position: relative;
 }
@@ -158,7 +157,7 @@ body {
     display: grid;
 }
 
-.footer .block {
+.block {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -209,4 +208,31 @@ body {
     text-align: center;
     font-size: 14px;
     line-height: 16px;
+}
+
+.gallery {
+    padding: 80px 30px;
+    position: relative;
+}
+
+.gallery .wrapper {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    align-items: start;
+    display: grid;
+}
+
+.gallery .grid {
+    grid-row-gap: 40px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.gallery .picture {
+    width: 100%;
 }
